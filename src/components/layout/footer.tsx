@@ -6,7 +6,6 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 import X from "@/assets/icons/x.svg";
 import Instagram from "@/assets/icons/instagram.svg";
-import Facebook from "@/assets/icons/facebook.svg";
 import Tiktok from "@/assets/icons/tiktok.svg";
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/ui/logo";
@@ -26,10 +25,10 @@ const Footer = () => {
   ];
 
   const services = [
-    { label: t("breakfastMeals"), href: "#services" },
-    { label: t("beverages"), href: "#services" },
-    { label: t("sandwiches"), href: "#services" },
-    { label: t("frenchToast"), href: "#services" }
+    { label: t("carWash"), href: "#services" },
+    { label: t("serviceCenter"), href: "#services" },
+    { label: t("ourValues"), href: "#services" },
+    { label: t("ourBranches"), href: "#services" }
   ];
 
   const socialLinks = [
@@ -42,11 +41,6 @@ const Footer = () => {
       name: t("socialMedia.x"),
       url: "https://x.com/mesfah",
       icon: X
-    },
-    {
-      name: t("socialMedia.facebook"),
-      url: "https://facebook.com/mesfah",
-      icon: Facebook
     },
     {
       name: t("socialMedia.tiktok"),
