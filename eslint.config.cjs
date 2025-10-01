@@ -1,8 +1,8 @@
 // @ts-check
+const { FlatCompat } = require('@eslint/eslintrc');
 const js = require('@eslint/js');
 const tsParser = require('@typescript-eslint/parser');
 const tsPlugin = require('@typescript-eslint/eslint-plugin');
-const nextPlugin = require('@next/eslint-plugin-next');
 const reactPlugin = require('eslint-plugin-react');
 const reactHooks = require('eslint-plugin-react-hooks');
 const jsxA11y = require('eslint-plugin-jsx-a11y');
@@ -11,11 +11,14 @@ const prettier = require('eslint-plugin-prettier');
 const unusedImports = require('eslint-plugin-unused-imports');
 const globals = require('globals');
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+const compat = new FlatCompat();
+
+/** @type {import('eslint').Linter.Config[]} */
 module.exports = [
   {
     ignores: ['.next/**', 'node_modules/**', 'dist/**', 'build/**', 'out/**']
   },
+  ...compat.extends('next/core-web-vitals'),
   js.configs.recommended,
   {
     files: ['**/*.{ts,tsx}'],
@@ -30,7 +33,6 @@ module.exports = [
     },
     plugins: {
       '@typescript-eslint': tsPlugin,
-      '@next/next': nextPlugin,
       react: reactPlugin,
       'react-hooks': reactHooks,
       'jsx-a11y': jsxA11y,
@@ -40,8 +42,6 @@ module.exports = [
     },
     settings: { react: { version: 'detect' } },
     rules: {
-      ...nextPlugin.configs.recommended.rules,
-      ...nextPlugin.configs["core-web-vitals"].rules,
       'no-console': 'off',
       'no-undef': 'off',
       'react/prop-types': 'off',

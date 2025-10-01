@@ -7,7 +7,6 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import X from "@/assets/icons/x.svg";
 import Instagram from "@/assets/icons/instagram.svg";
 import Tiktok from "@/assets/icons/tiktok.svg";
-import { Button } from "@/components/ui/button";
 import Logo from "@/components/ui/logo";
 import { Link } from "@/i18n/navigation.public";
 import { siteConfig } from "@/config/site";
@@ -210,7 +209,7 @@ const Footer = () => {
               ))}
             </div>
 
-            <Button variant="outline" asChild>
+            {/* <Button variant="outline" asChild>
               <Link
                 href={siteConfig.links.whatsapp}
                 target="_blank"
@@ -218,7 +217,7 @@ const Footer = () => {
               >
                 {t("connectViaWhatsApp")}
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </m.div>
 

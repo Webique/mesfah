@@ -12,7 +12,6 @@ import { Link, usePathname } from "@/i18n/navigation.public";
 import Logo from "@/components/ui/logo";
 import { cn } from "@/lib/utils";
 import LocaleSwitcher from "@/components/locale-switcher";
-import { siteConfig } from "@/config/site";
 
 export default function Header() {
   const t = useTranslations("Header");
@@ -155,11 +154,7 @@ export default function Header() {
                   size="lg"
                   asChild
                 >
-                  <Link
-                    href={siteConfig.links.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link href={"#"} target="_blank" rel="noopener noreferrer">
                     {t("cta")}
                     <Phone className="h-5 w-5 transition group-hover:scale-95" />
                   </Link>
@@ -261,7 +256,7 @@ export default function Header() {
                       asChild
                     >
                       <Link
-                        href={siteConfig.links.whatsapp}
+                        href={"#"}
                         onClick={() => setIsMobileMenuOpen(false)}
                         target="_blank"
                         rel="noopener noreferrer"

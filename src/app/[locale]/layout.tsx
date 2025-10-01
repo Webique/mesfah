@@ -5,11 +5,11 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getLangDir } from "rtl-detect";
 
-import Document from "../document";
-
 import { routing } from "@/i18n/routing.public";
 import { siteConfig } from "@/config/site";
 import RootProviders from "@/app/root-providers";
+
+import Document from "../document";
 
 type Params = Promise<{ locale: Locale }>;
 
