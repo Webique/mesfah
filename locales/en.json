@@ -1,0 +1,144 @@
+{
+  "IndexPage": {
+    "WhatsAppFloat": {
+      "tooltip": "Contact us on WhatsApp"
+    }
+  },
+  "Error": {
+    "title": "Something went wrong!",
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+    "retryButton": "Retry",
+    "contactSupport": "Contact Support",
+    "goBack": "Go Back",
+    "backToHome": "Back to Home"
+  },
+  "LocaleLayout": {
+    "name": "Mesfah | Best Car Wash & Service Centers",
+    "short_name": "Mesfah",
+    "description": "Mesfah offers the best car wash and service in Riyadh. We use nano-wax, filtered water, genuine oils, and professional technicians to ensure the highest quality. With free services and a special loyalty program.",
+    "keywords": [
+      "Mesfah",
+      "car wash",
+      "car service",
+      "oil change",
+      "nano wax",
+      "car care",
+      "Riyadh car services",
+      "24-hour car wash"
+    ]
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇸🇦 Arabic} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact Us"
+    },
+    "cta": "Contact Us",
+    "siteName": "Mesfah",
+    "siteDescription": "Best Car Wash & Service"
+  },
+  "Hero": {
+    "title": "Best car wash and service with quality assurance and free services.",
+    "contactCta": "Contact Us",
+    "branchesCta": "Nearest Branch"
+  },
+  "CarWash": {
+    "title": "About the Car Wash",
+    "lifelinesWax": "We have a contract with Lifelines for waxes.",
+    "waxProperties": "The wax contains nano-material + zero salts.",
+    "waterUsed": "Water used: fresh + filtered water.",
+    "washingStepsTitle": "Washing Steps:",
+    "washingSteps": [
+      "Preparatory phase + wax phase.",
+      "Special towels for each part (car body, glass, interior)."
+    ],
+    "freeServicesTitle": "Free Services:",
+    "freeServices": [
+      "Car freshener.",
+      "Floor mats covering."
+    ],
+    "satisfactionGuarantee": "If the customer is not satisfied with the wash -> we redo it.",
+    "loyaltyProgram": "Loyalty Program: Every 4 washes = 5th is free.",
+    "workingHours": "Working Hours: 24 hours."
+  },
+  "ServiceCenter": {
+    "title": "About the Service Center",
+    "oils": "Original and certified oils from main dealers.",
+    "pricing": "Wholesale prices + only a 10 SAR service fee.",
+    "filters": "All filters are original.",
+    "specializedEquipmentTitle": "Specialized Equipment:",
+    "specializedEquipment": [
+      "Transmission fluid flush machine.",
+      "Radiator flush machine."
+    ],
+    "technicians": "Technicians: Professional and specialized.",
+    "tiresTitle": "Tires:",
+    "tires": [
+      "Contracts with all major companies (Pirelli, Goodyear, Continental, Hankook...).",
+      "Wholesale prices.",
+      "Hot patch repair service."
+    ],
+    "freeServicesTitle": "Free Services:",
+    "freeServices": [
+      "Engine polishing after oil change."
+    ],
+    "loungesTitle": "Lounges:",
+    "lounges": [
+      "Air-conditioned, cold/hot drinks.",
+      "Direct view of their cars."
+    ],
+    "workingHours": "Working Hours: From 6 AM - 2 AM."
+  },
+  "CustomerPromise": {
+    "title": "Mesfah Values",
+    "values": [
+      "Customer satisfaction first.",
+      "High quality in all services.",
+      "A package of free services for every customer."
+    ]
+  },
+  "Branches": {
+    "title": "Branches",
+    "nargesWash": "Al-Narges Wash",
+    "nargesService": "Mesfah Service Al-Narges",
+    "turkiAlAwwalService": "Mesfah Service Turki Al-Awwal",
+    "muroojWash": "Al-Murooj Wash",
+    "duraysStation": "Al-Durays Station",
+    "duraysServices": "Inside: Mesfah Service + Mesfah Care."
+  },
+  "Footer": {
+    "home": "Home",
+    "about": "About Us",
+    "vision": "Vision & Mission",
+    "identity": "Our Identity",
+    "location": "Location",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contactUs": "Contact Us",
+    "available24_7": "Available 24/7",
+    "connectViaWhatsApp": "Connect via WhatsApp",
+    "copyright": "© {year} Mesfah. All rights reserved",
+    "companyDescription": "Mesfah is your premier destination for car wash and service in Riyadh. We are committed to providing the highest levels of quality and care for your vehicle.",
+    "carWash": "Car Wash",
+    "serviceCenter": "Service Center",
+    "ourValues": "Our Values",
+    "ourBranches": "Our Branches",
+    "socialMedia": {
+      "whatsapp": "WhatsApp",
+      "x": "X",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "linktree": "Linktree"
+    },
+    "ourLocation": "Our Location on the Map"
+  }
+}
