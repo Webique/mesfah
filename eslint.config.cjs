@@ -40,6 +40,8 @@ module.exports = [
     },
     settings: { react: { version: 'detect' } },
     rules: {
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs["core-web-vitals"].rules,
       'no-console': 'off',
       'no-undef': 'off',
       'react/prop-types': 'off',

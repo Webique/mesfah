@@ -2,7 +2,6 @@
 import { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
-const withPlugins = require("next-compose-plugins");
 const withSvgr = require("next-plugin-svgr");
 
 const withNextIntl = createNextIntlPlugin();
@@ -35,4 +34,4 @@ const nextConfig: NextConfig = {
   }
 };
 
-export default withPlugins([withSvgr, withNextIntl], nextConfig);
+export default withNextIntl(withSvgr(nextConfig));
