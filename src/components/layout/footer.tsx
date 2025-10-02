@@ -2,15 +2,15 @@
 
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
-import { Phone, Mail, MapPin } from "lucide-react";
+import ExportedImage from "next-image-export-optimizer";
 
-import X from "@/assets/icons/x.svg";
 import Instagram from "@/assets/icons/instagram.svg";
-import Tiktok from "@/assets/icons/tiktok.svg";
 import Linktree from "@/assets/icons/linktree.svg";
+import Tiktok from "@/assets/icons/tiktok.svg";
+import X from "@/assets/icons/x.svg";
 import Logo from "@/components/ui/logo";
-import { Link } from "@/i18n/navigation.public";
 import { siteConfig } from "@/config/site";
+import { Link } from "@/i18n/navigation.public";
 import { cn } from "@/lib/utils";
 
 const Footer = () => {
@@ -19,28 +19,28 @@ const Footer = () => {
 
   const quickLinks = [
     { label: t("home"), href: "/" },
-    { label: t("vision"), href: "#vision" },
-    { label: t("about"), href: "#about" },
-    { label: t("services"), href: "#services" },
-    { label: t("identity"), href: "#identity" }
+    { label: t("carWash"), href: "#car-wash" },
+    { label: t("serviceCenter"), href: "#service-center" },
+    { label: t("customerPromise"), href: "#customer-promise" },
+    { label: t("branches"), href: "#branches" }
   ];
 
   const services = [
-    { label: t("carWash"), href: "#services" },
-    { label: t("serviceCenter"), href: "#services" },
-    { label: t("ourValues"), href: "#services" },
-    { label: t("ourBranches"), href: "#services" }
+    { label: t("carWash"), href: "#car-wash" },
+    { label: t("serviceCenter"), href: "#service-center" },
+    { label: t("ourValues"), href: "#our-values" },
+    { label: t("contactUs"), href: "#contact" }
   ];
 
   const socialLinks = [
     {
       name: t("socialMedia.instagram"),
-      url: "https://instagram.com/mesfah",
+      url: siteConfig.links.instagram,
       icon: Instagram
     },
     {
       name: t("socialMedia.x"),
-      url: "https://x.com/mesfah",
+      url: siteConfig.links.x,
       icon: X
     },
     {
@@ -132,7 +132,7 @@ const Footer = () => {
             </ul>
           </m.div>
 
-          {/* Contact Info */}
+          {/* Contact Information */}
           <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -142,51 +142,26 @@ const Footer = () => {
           >
             <h3 className="text-lg font-bold">{t("contactUs")}</h3>
             <div className="space-y-3">
-              <m.div
-                whileHover={{ scale: 1.02 }}
-                className="flex items-center gap-2"
-              >
-                <Phone className="size-4 opacity-90" />
+              <p className="flex items-center gap-2 text-sm">
+                <span className="font-semibold">{t("available24_7")}</span>
+              </p>
+              <div className="pt-2">
+                <p className="text-sm font-medium">{t("ourLocation")}</p>
                 <a
-                  href={`tel:${siteConfig.support.phone}`}
-                  className="text-sm opacity-90 transition-opacity hover:opacity-100"
-                  dir="ltr"
-                >
-                  {siteConfig.support.phone}
-                </a>
-              </m.div>
-
-              <m.div
-                whileHover={{ scale: 1.02 }}
-                className="flex items-center gap-2"
-              >
-                <Mail className="size-4 opacity-90" />
-                <a
-                  href={`mailto:${siteConfig.support.email}`}
+                  href="https://maps.app.goo.gl/ZaTEimD73Uyx92si8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm opacity-90 transition-opacity hover:opacity-100"
+                  className="mt-1 block text-xs opacity-90 hover:opacity-100"
                 >
-                  {siteConfig.support.email}
+                  <ExportedImage
+                    src="/images/IMG_8742.jpeg"
+                    alt="Location"
+                    width={300}
+                    height={80}
+                    className="mt-2 h-20 w-full rounded-md object-cover"
+                  />
                 </a>
-              </m.div>
-
-              <m.div
-                whileHover={{ scale: 1.02 }}
-                className="flex items-center gap-2"
-              >
-                <MapPin className="size-4 opacity-90" />
-                <a
-                  href={siteConfig.links.googleMap}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm opacity-90 transition-opacity hover:opacity-100"
-                >
-                  {t("ourLocation")}
-                </a>
-              </m.div>
-
-              <div className="text-xs opacity-75">{t("available24_7")}</div>
+              </div>
             </div>
           </m.div>
         </div>
@@ -209,7 +184,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="p-2 hover:opacity-80"
+                  className="bg-secondary-foreground/10 hover:bg-secondary-foreground/20 rounded-full p-2"
                   title={social.name}
                 >
                   <social.icon
@@ -221,16 +196,6 @@ const Footer = () => {
                 </m.a>
               ))}
             </div>
-
-            {/* <Button variant="outline" asChild>
-              <Link
-                href={siteConfig.links.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("connectViaWhatsApp")}
-              </Link>
-            </Button> */}
           </div>
         </m.div>
 
