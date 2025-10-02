@@ -4,8 +4,8 @@ import { Clock } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 
+import Email from "@/assets/icons/email.svg";
 import Instagram from "@/assets/icons/instagram.svg";
-import Linktree from "@/assets/icons/linktree.svg";
 import TikTok from "@/assets/icons/tiktok.svg";
 import X from "@/assets/icons/x.svg";
 import { cn } from "@/lib/utils";
@@ -27,9 +27,9 @@ const socialLinks = [
     url: "https://tiktok.com/@mesf2h"
   },
   {
-    name: "Linktree",
-    icon: Linktree,
-    url: "https://linktr.ee/mesfah"
+    name: "Email",
+    icon: Email,
+    url: "mailto:mesfah732014@gmail.com"
   }
 ];
 
