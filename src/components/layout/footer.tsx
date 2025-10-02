@@ -20,7 +20,6 @@ const Footer = () => {
   const quickLinks = [
     { label: t("home"), href: "/" },
     { label: t("carWash"), href: "#car-wash" },
-    { label: t("serviceCenter"), href: "#service-center" },
     { label: t("customerPromise"), href: "#customer-promise" },
     { label: t("branches"), href: "#branches" }
   ];
@@ -28,7 +27,6 @@ const Footer = () => {
   const services = [
     { label: t("carWash"), href: "#car-wash" },
     { label: t("serviceCenter"), href: "#service-center" },
-    { label: t("ourValues"), href: "#our-values" },
     { label: t("contactUs"), href: "#contact" }
   ];
 
@@ -154,7 +152,7 @@ const Footer = () => {
                   className="mt-1 block text-xs opacity-90 hover:opacity-100"
                 >
                   <ExportedImage
-                    src="/images/IMG_8742.jpeg"
+                    src="/images/footer-map.jpeg"
                     alt="Location"
                     width={300}
                     height={80}
