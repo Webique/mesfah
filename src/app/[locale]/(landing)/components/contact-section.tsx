@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Clock } from "lucide-react";
+import { Clock } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 
@@ -89,32 +89,7 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Cards */}
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              <m.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="bg-card border-border/50 hover:bg-accent/30 flex items-center gap-4 rounded-xl border p-4 transition-all duration-300 hover:shadow-lg"
-              >
-                <div className="flex-shrink-0">
-                  <m.div
-                    whileHover={{ rotate: 15, scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                    className="from-primary/20 to-primary/5 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br"
-                  >
-                    <MapPin className="text-primary h-6 w-6" />
-                  </m.div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold">
-                    {t("location.title")}
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    {t("location.description")}
-                  </p>
-                </div>
-              </m.div>
+            <div className="mx-auto grid max-w-[400px] grid-cols-1">
               <m.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
