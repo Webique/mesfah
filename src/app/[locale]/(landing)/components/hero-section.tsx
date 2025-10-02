@@ -11,7 +11,7 @@ export default function HeroSection() {
   const t = useTranslations("IndexPage.HeroSection");
 
   return (
-    <section className="relative max-w-screen h-screen min-h-[600px] w-full overflow-hidden">
+    <section className="max-w-screen relative h-screen min-h-[600px] w-full overflow-hidden">
       <m.div
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
@@ -89,7 +89,7 @@ export default function HeroSection() {
             <Button
               asChild
               size="lg"
-              className="hover:shadow-primary/50 px-8 py-6 text-base font-bold shadow-2xl transition-all rounded-full sm:px-10 sm:py-7 sm:text-lg"
+              className="hover:shadow-primary/50 rounded-full px-8 py-6 text-base font-bold shadow-2xl transition-all sm:px-10 sm:py-7 sm:text-lg"
             >
               <Link href="#contact" target="_blank" rel="noreferrer">
                 {t("contactCta")}
@@ -102,7 +102,7 @@ export default function HeroSection() {
               asChild
               variant="outline"
               size="lg"
-              className="border-2 border-white/70 bg-white/10 px-8 py-6 text-base font-bold text-white backdrop-blur-sm transition-all hover:border-white rounded-full hover:bg-white/20 hover:text-white hover:shadow-2xl sm:px-10 sm:py-7 sm:text-lg"
+              className="rounded-full border-2 border-white/70 bg-white/10 px-8 py-6 text-base font-bold text-white backdrop-blur-sm transition-all hover:border-white hover:bg-white/20 hover:text-white hover:shadow-2xl sm:px-10 sm:py-7 sm:text-lg"
             >
               <Link href="#branches">{t("branchesCta")}</Link>
             </Button>

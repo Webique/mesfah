@@ -221,7 +221,7 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-primary/20 bg-background/80 backdrop-blur-sm hover:bg-primary hover:border-primary hover:text-primary-foreground shadow-lg transition-all duration-300",
+        "border-primary/20 bg-background/80 hover:bg-primary hover:border-primary hover:text-primary-foreground absolute h-10 w-10 rounded-full border-2 shadow-lg backdrop-blur-sm transition-all duration-300 md:h-12 md:w-12",
         orientation === "horizontal"
           ? dir === "rtl"
             ? "right-5 top-1/2 -translate-y-1/2 md:right-6 lg:-right-16"
@@ -256,7 +256,7 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-primary/20 bg-background/80 backdrop-blur-sm hover:bg-primary hover:border-primary hover:text-primary-foreground shadow-lg transition-all duration-300",
+        "border-primary/20 bg-background/80 hover:bg-primary hover:border-primary hover:text-primary-foreground absolute h-10 w-10 rounded-full border-2 shadow-lg backdrop-blur-sm transition-all duration-300 md:h-12 md:w-12",
         orientation === "horizontal"
           ? dir === "rtl"
             ? "left-5 top-1/2 -translate-y-1/2 md:left-6 lg:-left-16"
