@@ -67,6 +67,7 @@ export default function BranchesSection() {
             <CarouselContent className="-ms-4 gap-0 py-16">
               {branches.map((branch, index) => {
                 const description = t(`branches.${index}.description`);
+                const mapUrl = t(`branches.${index}.mapUrl`);
                 return (
                   <CarouselItem
                     key={index}
@@ -83,20 +84,18 @@ export default function BranchesSection() {
                       }}
                       className="h-full"
                     >
-                      <m.div
+                      <m.a
+                        href={mapUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={{ y: -8 }}
                         transition={{ duration: 0.3 }}
                         className="bg-card border-border/50 group block h-full cursor-pointer overflow-hidden rounded-2xl border transition-all duration-300 hover:shadow-2xl"
-                        onClick={() => {
-                          document.getElementById('branches')?.scrollIntoView({ 
-                            behavior: 'smooth' 
-                          });
-                        }}
                       >
                         <div className="relative h-64 overflow-hidden">
                           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                           <div className="bg-primary/90 absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
-                            <MapPin className="text-primary-foreground h-5 w-5" />
+                            <ExternalLink className="text-primary-foreground h-5 w-5" />
                           </div>
                           <ExportedImage
                             src={t(`branches.${index}.image`)}
@@ -130,7 +129,7 @@ export default function BranchesSection() {
                           )}
 
                         <div className="from-primary/0 via-primary to-primary/0 absolute bottom-0 left-0 h-1 w-full scale-x-0 transform bg-gradient-to-r transition-transform duration-500 group-hover:scale-x-100" />
-                      </m.div>
+                      </m.a>
                     </m.div>
                   </CarouselItem>
                 );
