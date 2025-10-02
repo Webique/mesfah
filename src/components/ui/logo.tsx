@@ -5,19 +5,23 @@ import { Link as I18nLink } from "@/i18n/navigation.public";
 import { cn } from "@/lib/utils";
 
 type indexProps = {
+  src?: string;
   href?: string;
   className?: string;
   imgClassName?: string;
   desClassName?: string;
   smallInMobile?: boolean;
+  removeText?: boolean;
 };
 
 export default function Logo({
+  src = "/images/logo.png",
   className,
   imgClassName,
   desClassName,
   href = "/",
-  smallInMobile = false
+  smallInMobile = false,
+  removeText = false
 }: indexProps) {
   const t = useTranslations("Header");
 
@@ -37,26 +41,29 @@ export default function Logo({
           smallInMobile && "size-12 sm:size-20",
           imgClassName
         )}
-        src="/images/logo.png"
+        src={src}
         width={96}
         height={96}
         placeholder="empty"
         priority
         alt="site-logo"
+        unoptimized
       />
-      <div>
-        <span
-          className={cn(
-            "from-primary/90 via-primary bg-gradient-to-r to-amber-500 bg-clip-text text-xl font-black text-transparent",
-            smallInMobile && "text-lg leading-5 sm:text-lg"
-          )}
-        >
-          {t("siteName")}
-        </span>
-        <p className={cn("text-xs font-medium text-gray-600", desClassName)}>
-          {t("siteDescription")}
-        </p>
-      </div>
+      {!removeText && (
+        <div>
+          <span
+            className={cn(
+              "from-primary/90 to-primary bg-gradient-to-r via-slate-800 bg-clip-text text-xl font-black text-transparent",
+              smallInMobile && "text-lg leading-5 sm:text-lg"
+            )}
+          >
+            {t("siteName")}
+          </span>
+          <p className={cn("text-xs font-medium text-gray-600", desClassName)}>
+            {t("siteDescription")}
+          </p>
+        </div>
+      )}
     </I18nLink>
   );
 }

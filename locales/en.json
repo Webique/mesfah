@@ -1,11 +1,146 @@
 {
   "IndexPage": {
-    "HeroSection":{},
-    "CarWashSection":{},
-    "ServiceCenterSection":{},
-    "CustomerPromiseSection":{},
-    "BranchesSection":{},
-    "ContactSection":{},
+    "HeroSection": {
+      "title": "Mesfah",
+      "subtitle": "Best Car Wash & Service with Quality Assurance and Free Services.",
+      "contactCta": "Contact Us",
+      "branchesCta": "Find Nearest Branch"
+    },
+    "CarWashSection": {
+      "title": "About Our Car Wash",
+      "features": [
+        {
+          "title": "Lifelines Waxes",
+          "description": "We have a contract with Lifelines for high-quality waxes with nano-technology and zero salt."
+        },
+        {
+          "title": "Filtered Water",
+          "description": "We use fresh and filtered water to ensure a spotless clean for your vehicle."
+        },
+        {
+          "title": "Detailed Washing Process",
+          "description": "Our process includes a preparatory and wax phase, with separate towels for the car body, glass, and interior."
+        },
+        {
+          "title": "Free Services",
+          "description": "Enjoy complimentary services like car freshener and floor mat bagging with every wash."
+        },
+        {
+          "title": "Satisfaction Guaranteed",
+          "description": "If you're not satisfied with your car wash, we will re-wash it for free."
+        },
+        {
+          "title": "Loyalty Program",
+          "description": "Get your 5th car wash free after every 4 washes with our loyalty program."
+        },
+        {
+          "title": "24/7 Service",
+          "description": "Our car wash is open 24 hours a day, 7 days a week for your convenience."
+        }
+      ]
+    },
+    "ServiceCenterSection": {
+      "title": "About Our Service Center",
+      "features": [
+        {
+          "title": "Genuine Oils & Filters",
+          "description": "We use original and certified oils from main agents, and all our filters are genuine."
+        },
+        {
+          "title": "Competitive Pricing",
+          "description": "Enjoy wholesale prices on oils with a minimal service fee of just 10 SAR."
+        },
+        {
+          "title": "Specialized Equipment",
+          "description": "We use advanced equipment for services like transmission and radiator flushes."
+        },
+        {
+          "title": "Expert Technicians",
+          "description": "Our team consists of professional and specialized technicians to handle your car with care."
+        },
+        {
+          "title": "Tire Services",
+          "description": "We offer a wide range of tires from all major brands at wholesale prices, plus thermal patching."
+        },
+        {
+          "title": "Free Engine Polishing",
+          "description": "Get a complimentary engine polishing service after every oil change."
+        },
+        {
+          "title": "Comfortable Lounges",
+          "description": "Relax in our air-conditioned lounges with beverages and a direct view of your car being serviced."
+        },
+        {
+          "title": "Extended Hours",
+          "description": "We are open from 6 AM to 2 AM to accommodate your schedule."
+        }
+      ]
+    },
+    "CustomerPromiseSection": {
+      "title": "Our Customer Promise",
+      "promises": [
+        {
+          "title": "Customer Satisfaction First",
+          "description": "Your satisfaction is our top priority. We are committed to exceeding your expectations with every visit."
+        },
+        {
+          "title": "High-Quality Services",
+          "description": "We guarantee the highest quality in all our services, from car washes to maintenance."
+        },
+        {
+          "title": "Free Services Package",
+          "description": "Every customer receives a package of complimentary services to enhance their experience."
+        }
+      ]
+    },
+    "BranchesSection": {
+      "title": "Our Branches",
+      "branches": [
+        {
+          "name": "Narges Car Wash",
+          "location": "Narges",
+          "mapUrl": "https://maps.app.goo.gl/ZaTEimD73Uyx92si8?g_st=ipc",
+          "image": "/images/IMG_8742.jpeg"
+        },
+        {
+          "name": "Mesfah Service - Narges",
+          "location": "Narges",
+          "mapUrl": "https://maps.app.goo.gl/g2hPkVk1v5d69WMY9?g_st=ipc",
+          "image": "/images/IMG_8741.jpeg"
+        },
+        {
+          "name": "Mesfah Service - Turki Al Awal",
+          "location": "Turki Al Awal",
+          "mapUrl": "https://maps.app.goo.gl/ienWRmjYbvjhwVKg9?g_st=ipc",
+          "image": "/images/IMG_8739.jpeg"
+        },
+        {
+          "name": "Al Muruj Car Wash",
+          "location": "Al Muruj",
+          "mapUrl": "https://maps.app.goo.gl/WD3GYAvWrpJbSXVc6?g_st=ipc",
+          "image": "/images/IMG_8740.jpeg"
+        },
+        {
+          "name": "Aldrees Station",
+          "location": "Aldrees",
+          "description": "Includes Mesfah Service + Mesfah Care",
+          "mapUrl": "https://maps.app.goo.gl/KrH9iurAJZ6RxAUx9?g_st=ipc",
+          "image": "/images/IMG_8738.jpeg"
+        }
+      ]
+    },
+    "ContactSection": {
+      "title": "Contact Us",
+      "description": "We are available 24/7. Connect with us via WhatsApp or follow us on our social media channels.",
+      "whatsapp": "Connect via WhatsApp",
+      "socialMedia": {
+        "title": "Follow Us",
+        "x": "https://x.com/mesf2h",
+        "instagram": "https://instagram.com/mesf2h",
+        "tiktok": "https://tiktok.com/@mesf2h",
+        "linktree": "https://linktr.ee/mesfah"
+      }
+    },
     "WhatsAppFloat": {
       "tooltip": "Contact us on WhatsApp"
     }
@@ -45,7 +180,7 @@
     "nav": {
       "home": "Home",
       "about": "About Us",
-      "services": "Services",
+      "ourBranches": "Our Branches",
       "contact": "Contact Us"
     },
     "cta": "Contact Us",

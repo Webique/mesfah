@@ -7,9 +7,11 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import X from "@/assets/icons/x.svg";
 import Instagram from "@/assets/icons/instagram.svg";
 import Tiktok from "@/assets/icons/tiktok.svg";
+import Linktree from "@/assets/icons/linktree.svg";
 import Logo from "@/components/ui/logo";
 import { Link } from "@/i18n/navigation.public";
 import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 
 const Footer = () => {
   const t = useTranslations("Footer");
@@ -45,6 +47,11 @@ const Footer = () => {
       name: t("socialMedia.tiktok"),
       url: siteConfig.links.tiktok,
       icon: Tiktok
+    },
+    {
+      name: t("socialMedia.linktree"),
+      url: siteConfig.links.linktree,
+      icon: Linktree
     }
   ];
 
@@ -61,9 +68,10 @@ const Footer = () => {
             className="space-y-4"
           >
             <Logo
-              className="mb-4"
-              desClassName="text-current"
-              imgClassName="size-24"
+              src="/images/logo-2.png"
+              className="mb-6"
+              imgClassName="sm:size-36 size-36 rounded-none h-auto sm:h-auto"
+              removeText
             />
             <p className="text-sm leading-relaxed opacity-90">
               {t("companyDescription")}
@@ -204,7 +212,12 @@ const Footer = () => {
                   className="p-2 hover:opacity-80"
                   title={social.name}
                 >
-                  <social.icon className="size-5" />
+                  <social.icon
+                    className={cn(
+                      "fill-secondary-foreground stroke-secondary-foreground size-5",
+                      index === 2 && "fill-none"
+                    )}
+                  />
                 </m.a>
               ))}
             </div>

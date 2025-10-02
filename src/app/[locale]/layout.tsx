@@ -8,6 +8,7 @@ import { getLangDir } from "rtl-detect";
 import { routing } from "@/i18n/routing.public";
 import { siteConfig } from "@/config/site";
 import RootProviders from "@/app/root-providers";
+import Layout from "@/components/layout";
 
 import Document from "../document";
 
@@ -119,9 +120,7 @@ export default async function LocaleLayout({
     <Document locale={locale} direction={direction}>
       <NextIntlClientProvider>
         <RootProviders direction={direction}>
-          {/* <Layout> */}
-          {children}
-          {/* </Layout> */}
+          <Layout>{children}</Layout>
         </RootProviders>
       </NextIntlClientProvider>
     </Document>

@@ -1,11 +1,150 @@
 {
   "IndexPage": {
-    "HeroSection":{},
-    "CarWashSection":{},
-    "ServiceCenterSection":{},
-    "CustomerPromiseSection":{},
-    "BranchesSection":{},
-    "ContactSection":{},
+    "HeroSection": {
+      "title": "مصفاة",
+      "subtitle": "أفضل مغاسل وسيـرفس للسيارات مع ضمان الجودة وخدمات مجانية.",
+      "contactCta": "تواصل معنا",
+      "branchesCta": "أقرب فرع"
+    },
+    "CarWashSection": {
+      "title": "عن مغسلة السيارات",
+      "features": [
+        {
+          "title": "واكسات لايف لاينز",
+          "description": "متعاقدين مع شركة لايف لاينز للواكسات عالية الجودة التي تحتوي على مادة النانو وصفر أملاح."
+        },
+        {
+          "title": "مياه مفلترة",
+          "description": "نستخدم مياه حلوة ومفلترة لضمان نظافة فائقة لسيارتك."
+        },
+        {
+          "title": "خطوات غسيل دقيقة",
+          "description": "تشمل عمليتنا وجه تحضيري ووجه واكس، مع مناشف خاصة لكل جزء من السيارة (الهيكل، الزجاج، الداخلية)."
+        },
+        {
+          "title": "خدمات مجانية",
+          "description": "استمتع بخدمات مجانية مثل تعطير السيارة وتكييس الأرضيات مع كل غسلة."
+        },
+        {
+          "title": "ضمان الرضا",
+          "description": "إذا لم تكن راضيًا عن الغسيل، سنعيده لك مجانًا."
+        },
+        {
+          "title": "برنامج الولاء",
+          "description": "احصل على الغسلة الخامسة مجانًا بعد كل 4 غسلات مع برنامج الولاء الخاص بنا."
+        },
+        {
+          "title": "خدمة 24/7",
+          "description": "مغسلة السيارات لدينا مفتوحة 24 ساعة طوال أيام الأسبوع لراحتك."
+        }
+      ]
+    },
+    "ServiceCenterSection": {
+      "title": "عن مركز الخدمة",
+      "features": [
+        {
+          "title": "زيوت وفلاتر أصلية",
+          "description": "نستخدم زيوت أصلية ومعتمدة من الوكلاء الرئيسيين، وجميع الفلاتر أصلية."
+        },
+        {
+          "title": "أسعار تنافسية",
+          "description": "استمتع بأسعار جملة على الزيوت مع رسوم خدمة رمزية بقيمة 10 ريال فقط."
+        },
+        {
+          "title": "أجهزة متخصصة",
+          "description": "لدينا أجهزة متخصصة لغسيل القير والرديتر."
+        },
+        {
+          "title": "فنيون محترفون",
+          "description": "فريقنا مكون من فنيين محترفين ومتخصصين للعناية بسيارتك."
+        },
+        {
+          "title": "خدمات الكفرات",
+          "description": "نوفر كفرات من جميع الشركات الكبرى بأسعار جملة، بالإضافة إلى خدمة الترقيع الحراري."
+        },
+        {
+          "title": "تلميع مكينة مجاني",
+          "description": "احصل على تلميع مجاني للمكينة بعد كل غيار زيت."
+        },
+        {
+          "title": "استراحات مريحة",
+          "description": "استرخِ في استراحاتنا المكيفة مع مشروبات باردة وساخنة وإطلالة مباشرة على سيارتك أثناء الخدمة."
+        },
+        {
+          "title": "أوقات عمل ممتدة",
+          "description": "نعمل من 6 صباحًا حتى 2 ليلًا لنكون في خدمتك."
+        }
+      ]
+    },
+    "CustomerPromiseSection": {
+      "title": "وعدنا للعميل",
+      "promises": [
+        {
+          "title": "رضا العميل أولاً",
+          "description": "رضا العميل هو أولويتنا القصوى. نلتزم بتجاوز توقعاتك في كل زيارة."
+        },
+        {
+          "title": "جودة عالية في كل الخدمات",
+          "description": "نضمن أعلى مستويات الجودة في جميع خدماتنا، من غسيل السيارات إلى الصيانة."
+        },
+        {
+          "title": "باقة خدمات مجانية",
+          "description": "يحصل كل عميل على باقة من الخدمات المجانية لتعزيز تجربته."
+        }
+      ]
+    },
+    "BranchesSection": {
+      "title": "فروعنا",
+      "branches": [
+        {
+          "name": "مغسلة النرجس",
+          "description": "مغسلة النرجس",
+          "location": "النرجس",
+          "mapUrl": "https://maps.app.goo.gl/ZaTEimD73Uyx92si8?g_st=ipc",
+          "image": "/images/IMG_8742.jpeg"
+        },
+        {
+          "name": "مصفاة سيرفس - النرجس",
+          "description": "مصفاة سيرفس - النرجس",
+          "location": "النرجس",
+          "mapUrl": "https://maps.app.goo.gl/g2hPkVk1v5d69WMY9?g_st=ipc",
+          "image": "/images/IMG_8741.jpeg"
+        },
+        {
+          "name": "مصفاة سيرفس - تركي الأول",
+          "description": "مصفاة سيرفس - تركي الأول",
+          "location": "تركي الأول",
+          "mapUrl": "https://maps.app.goo.gl/ienWRmjYbvjhwVKg9?g_st=ipc",
+          "image": "/images/IMG_8739.jpeg"
+        },
+        {
+          "name": "مغسلة المروج",
+          "description": "مغسلة المروج",
+          "location": "المروج",
+          "mapUrl": "https://maps.app.goo.gl/WD3GYAvWrpJbSXVc6?g_st=ipc",
+          "image": "/images/IMG_8740.jpeg"
+        },
+        {
+          "name": "محطة الدريس",
+          "location": "الدريس",
+          "description": "داخلها: مصفاة سيرفس + مصفاة كير",
+          "mapUrl": "https://maps.app.goo.gl/KrH9iurAJZ6RxAUx9?g_st=ipc",
+          "image": "/images/IMG_8738.jpeg"
+        }
+      ]
+    },
+    "ContactSection": {
+      "title": "تواصل معنا",
+      "description": "نحن متاحون 24/7. تواصل معنا عبر واتساب أو تابعنا على قنوات التواصل الاجتماعي.",
+      "whatsapp": "تواصل عبر واتساب",
+      "socialMedia": {
+        "title": "تابعنا",
+        "x": "https://x.com/mesf2h",
+        "instagram": "https://instagram.com/mesf2h",
+        "tiktok": "https://tiktok.com/@mesf2h",
+        "linktree": "https://linktr.ee/mesfah"
+      }
+    },
     "WhatsAppFloat": {
       "tooltip": "تواصل معنا عبر واتساب"
     }
@@ -45,7 +184,7 @@
     "nav": {
       "home": "الرئيسية",
       "about": "من نحن",
-      "services": "خدماتنا",
+      "ourBranches": "فروعنا",
       "contact": "تواصل معنا"
     },
     "cta": "تواصل معنا",
