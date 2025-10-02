@@ -154,7 +154,11 @@ export default function Header() {
                   size="lg"
                   asChild
                 >
-                  <Link href={"#"} target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href={"#contact"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {t("cta")}
                     <Phone className="h-5 w-5 transition group-hover:scale-95" />
                   </Link>
@@ -256,7 +260,7 @@ export default function Header() {
                       asChild
                     >
                       <Link
-                        href={"#"}
+                        href={"#contact"}
                         onClick={() => setIsMobileMenuOpen(false)}
                         target="_blank"
                         rel="noopener noreferrer"
