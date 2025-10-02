@@ -145,20 +145,19 @@ const Footer = () => {
               </p>
               <div className="pt-2">
                 <p className="text-sm font-medium">{t("ourLocation")}</p>
-                <a
-                  href="https://maps.app.goo.gl/ZaTEimD73Uyx92si8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 block text-xs opacity-90 hover:opacity-100"
-                >
-                  <ExportedImage
-                    src="/images/footer-map.jpeg"
-                    alt="Location"
-                    width={300}
-                    height={80}
-                    className="mt-2 h-20 w-full rounded-md object-cover"
+                <div className="mt-2">
+                  <iframe
+                    src={siteConfig.links.googleMapIframe}
+                    width="100%"
+                    height="120"
+                    style={{ border: 0, borderRadius: '8px' }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Google Map"
+                    className="rounded-md"
                   />
-                </a>
+                </div>
               </div>
             </div>
           </m.div>

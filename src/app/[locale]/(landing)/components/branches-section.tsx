@@ -83,18 +83,20 @@ export default function BranchesSection() {
                       }}
                       className="h-full"
                     >
-                      <m.a
-                        href={t(`branches.${index}.mapUrl`)}
-                        target="_blank"
-                        rel="noreferrer"
+                      <m.div
                         whileHover={{ y: -8 }}
                         transition={{ duration: 0.3 }}
                         className="bg-card border-border/50 group block h-full cursor-pointer overflow-hidden rounded-2xl border transition-all duration-300 hover:shadow-2xl"
+                        onClick={() => {
+                          document.getElementById('branches')?.scrollIntoView({ 
+                            behavior: 'smooth' 
+                          });
+                        }}
                       >
                         <div className="relative h-64 overflow-hidden">
                           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                           <div className="bg-primary/90 absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
-                            <ExternalLink className="text-primary-foreground h-5 w-5" />
+                            <MapPin className="text-primary-foreground h-5 w-5" />
                           </div>
                           <ExportedImage
                             src={t(`branches.${index}.image`)}
@@ -128,7 +130,7 @@ export default function BranchesSection() {
                           )}
 
                         <div className="from-primary/0 via-primary to-primary/0 absolute bottom-0 left-0 h-1 w-full scale-x-0 transform bg-gradient-to-r transition-transform duration-500 group-hover:scale-x-100" />
-                      </m.a>
+                      </m.div>
                     </m.div>
                   </CarouselItem>
                 );

@@ -1,7 +1,7 @@
 {
   "IndexPage": {
     "HeroSection": {
-      "title": "أفضل مغاسل وسيـرفس للسيارات",
+      "title": "فضل مغاسل ومراكز خدمات للسيارات",
       "subtitle": "مع ضمان الجودة وخدمات مجانية",
       "contactCta": "تواصل معنا",
       "branchesCta": "أقرب فرع",
@@ -103,21 +103,21 @@
         "branches": [
         {
           "name": "مصفاة سيرفس",
-          "description": "خدمة غسيل سيارات متكاملة مع تنظيف داخلي وخارجي.",
+          "description": "مركز متخصص بالعناية الكاملة للسياره",
           "location": "العارض",
           "mapUrl": "https://maps.app.goo.gl/E6yqGRMNGceF3V2RA?g_st=ipc",
           "image": "/images/branches/1.jpg"
         },
         {
           "name": "مصفاة سيرفس",
-          "description": "غسيل سريع واحترافي لجميع أنواع السيارات.",
+          "description": "خدمة تغيير الزيوت فقط بافضل جوده",
           "location": "تركي الاول",
           "mapUrl": "https://maps.app.goo.gl/2XojHPeEgjGaAaE17?g_st=com.google.maps.preview.copy",
           "image": "/images/branches/2.jpg"
         },
         {
           "name": "مصفاة سيرفس",
-          "description": "مركز متخصص في العناية الكاملة بالسيارة.",
+          "description": "مركز متخصص بالعناية الكاملة للسياره",
           "location": "النرجس",
           "mapUrl": "https://maps.app.goo.gl/9ht986sFF8LAt4ND9?g_st=com.google.maps.preview.copy",
           "image": "/images/branches/3.jpg"
@@ -132,14 +132,14 @@
         {
           "name": "غسيل مصفاة",
           "location": "المروج",
-          "description": "غسيل يدوي دقيق للحفاظ على مظهر سيارتك.",
+          "description": "خدمة غسيل وتلميع باستخدام مواد عالية الجودة.",
           "mapUrl": "https://maps.app.goo.gl/KrH9iurAJZ6RxAUx9?g_st=ipc",
           "image": "/images/branches/5.jpg"
         },
         {
           "name": "مصفاة كير",
           "location": "العارض",
-          "description": "مركز عناية متكاملة مع باقات صيانة وتنظيف.",
+          "description": "جميع منتجات وحماية وعناية السيارة هنا من الوكلاء الرئيسيين",
           "mapUrl": "https://maps.app.goo.gl/VkcRsbuGbgXGj9XYA?g_st=ipc",
           "image": "/images/branches/6.jpg"
         }

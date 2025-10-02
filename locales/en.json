@@ -1,7 +1,7 @@
 {
   "IndexPage": {
     "HeroSection": {
-      "title": "Best Car Wash & Service",
+      "title": "Best Car Wash & Service Centers",
       "subtitle": "With Quality Assurance and Free Services",
       "contactCta": "Contact Us",
       "branchesCta": "Find Nearest Branch",
@@ -103,21 +103,21 @@
       "branches": [
           {
             "name": "Masfah Service",
-            "description": "Full car wash with interior and exterior cleaning.",
+            "description": "A specialized center for complete car care.",
             "location": "Al Aridh",
             "mapUrl": "https://maps.app.goo.gl/E6yqGRMNGceF3V2RA?g_st=ipc",
             "image": "/images/branches/1.jpg"
           },
           {
             "name": "Masfah Service",
-            "description": "Quick and professional wash for all types of cars.",
+            "description": "Oil change service only with the best quality",
             "location": "Turki Al Awwal",
             "mapUrl": "https://maps.app.goo.gl/2XojHPeEgjGaAaE17?g_st=com.google.maps.preview.copy",
             "image": "/images/branches/2.jpg"
           },
           {
             "name": "Masfah Service",
-            "description": "Specialized center for complete car care.",
+            "description": "A specialized center for complete car care.",
             "location": "Al Narjis",
             "mapUrl": "https://maps.app.goo.gl/9ht986sFF8LAt4ND9?g_st=com.google.maps.preview.copy",
             "image": "/images/branches/3.jpg"
@@ -132,14 +132,14 @@
           {
             "name": "Masfah Wash",
             "location": "Al Murooj",
-            "description": "Hand wash with precision to protect your car’s look.",
+            "description": "Car wash and polishing with high-quality products.",
             "mapUrl": " https://maps.app.goo.gl/KrH9iurAJZ6RxAUx9?g_st=ipc",
             "image": "/images/branches/5.jpg"
           },
           {
             "name": "Masfah Care",
             "location": "Al Aridh",
-            "description": "Full care center with cleaning and maintenance packages.",
+            "description": "All car products, protection, and care are here from the main dealers.",
             "mapUrl": "https://maps.app.goo.gl/VkcRsbuGbgXGj9XYA?g_st=ipc",
             "image": "/images/branches/6.jpg"
           }
