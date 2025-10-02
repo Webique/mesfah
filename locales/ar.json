@@ -100,44 +100,51 @@
     "BranchesSection": {
       "badge": "مواقعنا",
       "title": "فروعنا",
-      "branches": [
+        "branches": [
         {
-          "name": "مغسلة النرجس",
-          "description": "مغسلة النرجس",
+          "name": "مصفاة سيرفس",
+          "description": "خدمة غسيل سيارات متكاملة مع تنظيف داخلي وخارجي.",
+          "location": "العارض",
+          "mapUrl": "https://maps.app.goo.gl/E6yqGRMNGceF3V2RA?g_st=ipc",
+          "image": "/images/branches/1.jpg"
+        },
+        {
+          "name": "مصفاة سيرفس",
+          "description": "غسيل سريع واحترافي لجميع أنواع السيارات.",
+          "location": "تركي الاول",
+          "mapUrl": "https://maps.app.goo.gl/2XojHPeEgjGaAaE17?g_st=com.google.maps.preview.copy",
+          "image": "/images/branches/2.jpg"
+        },
+        {
+          "name": "مصفاة سيرفس",
+          "description": "مركز متخصص في العناية الكاملة بالسيارة.",
           "location": "النرجس",
-          "mapUrl": "https://maps.app.goo.gl/ZaTEimD73Uyx92si8?g_st=ipc",
-          "image": "/images/IMG_8742.jpeg"
+          "mapUrl": "https://maps.app.goo.gl/9ht986sFF8LAt4ND9?g_st=com.google.maps.preview.copy",
+          "image": "/images/branches/3.jpg"
         },
         {
-          "name": "مصفاة سيرفس - النرجس",
-          "description": "مصفاة سيرفس - النرجس",
+          "name": "غسيل مصفاة",
           "location": "النرجس",
-          "mapUrl": "https://maps.app.goo.gl/g2hPkVk1v5d69WMY9?g_st=ipc",
-          "image": "/images/IMG_8741.jpeg"
+          "description": "خدمة غسيل وتلميع باستخدام مواد عالية الجودة.",
+          "mapUrl": "https://maps.app.goo.gl/FUVFZCXXQYwGwbW19?g_st=com.google.maps.preview.copy",
+          "image": "/images/branches/4.jpg"
         },
         {
-          "name": "مصفاة سيرفس - تركي الأول",
-          "description": "مصفاة سيرفس - تركي الأول",
-          "location": "تركي الأول",
-          "mapUrl": "https://maps.app.goo.gl/ienWRmjYbvjhwVKg9?g_st=ipc",
-          "image": "/images/IMG_8739.jpeg"
-        },
-        {
-          "name": "مغسلة المروج",
-          "description": "مغسلة المروج",
+          "name": "غسيل مصفاة",
           "location": "المروج",
-          "mapUrl": "https://maps.app.goo.gl/WD3GYAvWrpJbSXVc6?g_st=ipc",
-          "image": "/images/IMG_8740.jpeg"
+          "description": "غسيل يدوي دقيق للحفاظ على مظهر سيارتك.",
+          "mapUrl": "https://maps.app.goo.gl/upDvNduQy8vaUqNx6?g_st=ic",
+          "image": "/images/branches/5.jpg"
         },
         {
-          "name": "محطة الدريس",
-          "location": "الدريس",
-          "description": "داخلها: مصفاة سيرفس + مصفاة كير",
-          "mapUrl": "https://maps.app.goo.gl/KrH9iurAJZ6RxAUx9?g_st=ipc",
-          "image": "/images/IMG_8738.jpeg"
+          "name": "مصفاة كير",
+          "location": "العارض",
+          "description": "مركز عناية متكاملة مع باقات صيانة وتنظيف.",
+          "mapUrl": "https://maps.app.goo.gl/VkcRsbuGbgXGj9XYA?g_st=ipc",
+          "image": "/images/branches/6.jpg"
         }
       ]
-    },
+  },
     "ContactSection": {
       "badge": "تواصل معنا",
       "title": "اتصل بنا",

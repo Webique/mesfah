@@ -101,42 +101,49 @@
       "badge": "Our Locations",
       "title": "Our Branches",
       "branches": [
-        {
-          "name": "Narges Car Wash",
-          "description": "Narges Car Wash",
-          "location": "Narges",
-          "mapUrl": "https://maps.app.goo.gl/ZaTEimD73Uyx92si8?g_st=ipc",
-          "image": "/images/IMG_8742.jpeg"
-        },
-        {
-          "name": "Mesfah Service - Narges",
-          "description": "Mesfah Service - Narges",
-          "location": "Narges",
-          "mapUrl": "https://maps.app.goo.gl/g2hPkVk1v5d69WMY9?g_st=ipc",
-          "image": "/images/IMG_8741.jpeg"
-        },
-        {
-          "name": "Mesfah Service - Turki Al Awal",
-          "description": "Mesfah Service - Turki Al Awal",
-          "location": "Turki Al Awal",
-          "mapUrl": "https://maps.app.goo.gl/ienWRmjYbvjhwVKg9?g_st=ipc",
-          "image": "/images/IMG_8739.jpeg"
-        },
-        {
-          "name": "Al Muruj Car Wash",
-          "description": "Al Muruj Car Wash",
-          "location": "Al Muruj",
-          "mapUrl": "https://maps.app.goo.gl/WD3GYAvWrpJbSXVc6?g_st=ipc",
-          "image": "/images/IMG_8740.jpeg"
-        },
-        {
-          "name": "Aldrees Station",
-          "description": "Includes Mesfah Service + Mesfah Care",
-          "location": "Aldrees",
-          "mapUrl": "https://maps.app.goo.gl/KrH9iurAJZ6RxAUx9?g_st=ipc",
-          "image": "/images/IMG_8738.jpeg"
-        }
-      ]
+          {
+            "name": "Masfah Service",
+            "description": "Full car wash with interior and exterior cleaning.",
+            "location": "Al Aridh",
+            "mapUrl": "https://maps.app.goo.gl/E6yqGRMNGceF3V2RA?g_st=ipc",
+            "image": "/images/branches/1.jpg"
+          },
+          {
+            "name": "Masfah Service",
+            "description": "Quick and professional wash for all types of cars.",
+            "location": "Turki Al Awwal",
+            "mapUrl": "https://maps.app.goo.gl/2XojHPeEgjGaAaE17?g_st=com.google.maps.preview.copy",
+            "image": "/images/branches/2.jpg"
+          },
+          {
+            "name": "Masfah Service",
+            "description": "Specialized center for complete car care.",
+            "location": "Al Narjis",
+            "mapUrl": "https://maps.app.goo.gl/9ht986sFF8LAt4ND9?g_st=com.google.maps.preview.copy",
+            "image": "/images/branches/3.jpg"
+          },
+          {
+            "name": "Masfah Wash",
+            "location": "Al Narjis",
+            "description": "Car wash and polishing with high-quality products.",
+            "mapUrl": "https://maps.app.goo.gl/FUVFZCXXQYwGwbW19?g_st=com.google.maps.preview.copy",
+            "image": "/images/branches/4.jpg"
+          },
+          {
+            "name": "Masfah Wash",
+            "location": "Al Murooj",
+            "description": "Hand wash with precision to protect your car’s look.",
+            "mapUrl": "https://maps.app.goo.gl/upDvNduQy8vaUqNx6?g_st=ic",
+            "image": "/images/branches/5.jpg"
+          },
+          {
+            "name": "Masfah Care",
+            "location": "Al Aridh",
+            "description": "Full care center with cleaning and maintenance packages.",
+            "mapUrl": "https://maps.app.goo.gl/VkcRsbuGbgXGj9XYA?g_st=ipc",
+            "image": "/images/branches/6.jpg"
+          }
+        ]
     },
     "ContactSection": {
       "badge": "Get in Touch",
