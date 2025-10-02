@@ -1,5 +1,11 @@
 {
   "IndexPage": {
+    "HeroSection":{},
+    "CarWashSection":{},
+    "ServiceCenterSection":{},
+    "CustomerPromiseSection":{},
+    "BranchesSection":{},
+    "ContactSection":{},
     "WhatsAppFloat": {
       "tooltip": "تواصل معنا عبر واتساب"
     }
