@@ -42,6 +42,7 @@
       ]
     },
     "ServiceCenterSection": {
+      "badge": "Professional Services",
       "title": "About Our Service Center",
       "features": [
         {

@@ -21,11 +21,9 @@ export default function CarWashSection() {
 
   return (
     <section id="car-wash" className="py-20 max-w-screen overflow-hidden relative">
-      {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none" />
 
       <div className="layout flex flex-col-reverse items-center gap-16 lg:grid lg:grid-cols-2 relative">
-        {/* Image Section with enhanced styling */}
         <m.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -34,7 +32,6 @@ export default function CarWashSection() {
           className="relative"
         >
           <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
-            {/* Gradient overlay on hover */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
 
             <ExportedImage
@@ -45,13 +42,11 @@ export default function CarWashSection() {
               className="rounded-3xl object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700"
             />
 
-            {/* Decorative element */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-3xl" />
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl" />
           </div>
         </m.div>
 
-        {/* Content Section */}
         <div className="space-y-8 ">
           <div className="flex flex-col gap-4 lg:gap-0 items-center lg:items-start mx-auto lg:mx-0">
             <m.div

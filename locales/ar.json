@@ -42,6 +42,7 @@
       ]
     },
     "ServiceCenterSection": {
+      "badge": "خدمات احترافية",
       "title": "عن مركز الخدمة",
       "features": [
         {
