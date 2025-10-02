@@ -23,7 +23,7 @@ export default function LocaleSwitcher({
         href={pathname}
         locale={locale === "en" ? "ar" : "en"}
         className={cn(
-          "inline-flex w-full items-center justify-between rounded-full px-3 py-2 text-xs font-semibold text-white hover:text-yellow-300 focus:outline-none sm:text-sm transition-colors duration-300"
+          "inline-flex w-full items-center justify-between rounded-full px-3 py-2 text-xs font-semibold text-white hover:text-[#aa9675] focus:outline-none sm:text-sm transition-colors duration-300"
         )}
       >
         <span className="flex items-center gap-1.5">

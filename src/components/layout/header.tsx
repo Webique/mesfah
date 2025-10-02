@@ -128,8 +128,8 @@ export default function Header() {
                     href={item.href}
                     className={cn(
                       "relative px-1 text-sm font-medium tracking-wide transition-colors duration-300 hover:scale-105",
-                      "text-white hover:text-yellow-300",
-                      "before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-yellow-300 before:transition-all before:duration-300 hover:before:w-full"
+                      "text-white hover:text-[#aa9675]",
+                      "before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-[#aa9675] before:transition-all before:duration-300 hover:before:w-full"
                     )}
                   >
                     {item.label}
@@ -146,7 +146,7 @@ export default function Header() {
                 className="flex items-center"
               >
                 <Button
-                  className="group me-2 hidden rounded-full px-4 py-5 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl lg:inline-flex bg-yellow-500 hover:bg-yellow-400 text-white border-yellow-500 hover:border-yellow-400"
+                  className="group me-2 hidden rounded-full px-4 py-5 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl lg:inline-flex bg-[#aa9675] hover:bg-[#aa9675]/80 text-white border-[#aa9675] hover:border-[#aa9675]/80"
                   size="lg"
                   asChild
                 >
@@ -173,7 +173,7 @@ export default function Header() {
                   onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                   className={cn(
                     "p-2 transition-all duration-300 hover:scale-105 focus:ring-2 focus:ring-offset-2",
-                    "hover:text-yellow-300 focus:ring-yellow-300 text-white hover:bg-white/10"
+                    "hover:text-[#aa9675] focus:ring-[#aa9675] text-white hover:bg-white/10"
                   )}
                   aria-label="Toggle mobile menu"
                 >
@@ -220,7 +220,7 @@ export default function Header() {
               exit="closed"
               className={cn(
                 "overflow-hidden border-t lg:hidden",
-                "border-yellow-300/20 bg-[#25343a]/95 backdrop-blur-lg"
+                "border-[#aa9675]/20 bg-[#25343a]/95 backdrop-blur-lg"
               )}
             >
               <nav className="layout py-6">
@@ -232,7 +232,7 @@ export default function Header() {
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={cn(
                           "block rounded-lg px-4 py-3 text-base font-medium transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2",
-                          "hover:bg-yellow-300/10 hover:text-yellow-300 focus:ring-yellow-300 text-white"
+                          "hover:bg-[#aa9675]/10 hover:text-[#aa9675] focus:ring-[#aa9675] text-white"
                         )}
                       >
                         {item.label}
@@ -244,7 +244,7 @@ export default function Header() {
                   <m.div variants={mobileNavItemVariants} className="pt-4">
                     <Button
                       size="lg"
-                      className="group w-full justify-center bg-yellow-500 hover:bg-yellow-400 text-white border-yellow-500 hover:border-yellow-400"
+                      className="group w-full justify-center bg-[#aa9675] hover:bg-[#aa9675]/80 text-white border-[#aa9675] hover:border-[#aa9675]/80"
                       asChild
                     >
                       <Link
