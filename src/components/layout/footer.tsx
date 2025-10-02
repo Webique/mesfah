@@ -4,8 +4,8 @@ import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 import ExportedImage from "next-image-export-optimizer";
 
+import Email from "@/assets/icons/email.svg";
 import Instagram from "@/assets/icons/instagram.svg";
-import Linktree from "@/assets/icons/linktree.svg";
 import Tiktok from "@/assets/icons/tiktok.svg";
 import X from "@/assets/icons/x.svg";
 import Logo from "@/components/ui/logo";
@@ -47,14 +47,14 @@ const Footer = () => {
       icon: Tiktok
     },
     {
-      name: t("socialMedia.linktree"),
-      url: siteConfig.links.linktree,
-      icon: Linktree
+      name: t("socialMedia.email"),
+      url: "mailto:mesfah732014@gmail.com",
+      icon: Email
     }
   ];
 
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-[#1f2937] text-white border-t border-gray-600">
       <div className="layout px-4 py-12 sm:pt-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
@@ -71,7 +71,7 @@ const Footer = () => {
               imgClassName="sm:size-36 size-36 rounded-none h-auto sm:h-auto"
               removeText
             />
-            <p className="text-sm leading-relaxed opacity-90">
+            <p className="text-sm leading-relaxed text-gray-300">
               {t("companyDescription")}
             </p>
           </m.div>

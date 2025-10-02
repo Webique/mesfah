@@ -19,14 +19,16 @@ export default function Document({ children, locale, direction }: Props) {
       dir={direction}
       lang={locale}
       style={{ height: "100%" }}
+      className="dark"
     >
       <head />
       <body
         suppressHydrationWarning
         className={cn(
-          "flex h-full flex-col antialiased",
+          "flex h-full flex-col antialiased dark",
           cairoArabic.className
         )}
+        style={{ backgroundColor: '#25343a', color: '#ffffff' }}
       >
         <RootProviders direction={direction}>{children}</RootProviders>
       </body>
