@@ -1,9 +1,8 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import * as React from "react";
-import * as m from "motion/react-m";
 import { Award, Check, Star } from "lucide-react";
+import * as m from "motion/react-m";
+import { useTranslations } from "next-intl";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -25,7 +24,7 @@ const PROMISES = [
 export default function CustomerPromiseSection() {
   const t = useTranslations("IndexPage.CustomerPromiseSection");
   return (
-    <section id="customer-promise" className="py-20">
+    <section id="customer-promise" className="py-20  max-w-screen overflow-hidden">
       <div className="layout text-center">
         <m.h2
           initial={{ opacity: 0, y: -20 }}

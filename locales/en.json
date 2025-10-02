@@ -1,10 +1,11 @@
 {
   "IndexPage": {
     "HeroSection": {
-      "title": "Mesfah",
-      "subtitle": "Best Car Wash & Service with Quality Assurance and Free Services.",
+      "title": "Best Car Wash & Service",
+      "subtitle": "With Quality Assurance and Free Services",
       "contactCta": "Contact Us",
-      "branchesCta": "Find Nearest Branch"
+      "branchesCta": "Find Nearest Branch",
+      "discoverMore": "Discover More"
     },
     "CarWashSection": {
       "title": "About Our Car Wash",

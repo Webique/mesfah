@@ -1,10 +1,11 @@
 {
   "IndexPage": {
     "HeroSection": {
-      "title": "مصفاة",
-      "subtitle": "أفضل مغاسل وسيـرفس للسيارات مع ضمان الجودة وخدمات مجانية.",
+      "title": "أفضل مغاسل وسيـرفس للسيارات",
+      "subtitle": "مع ضمان الجودة وخدمات مجانية",
       "contactCta": "تواصل معنا",
-      "branchesCta": "أقرب فرع"
+      "branchesCta": "أقرب فرع",
+      "discoverMore": "اكتشف المزيد"
     },
     "CarWashSection": {
       "title": "عن مغسلة السيارات",

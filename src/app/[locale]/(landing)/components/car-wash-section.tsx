@@ -1,10 +1,9 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import * as React from "react";
-import * as m from "motion/react-m";
 import { CheckCircle } from "lucide-react";
+import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
+import { useTranslations } from "next-intl";
 
 const CAR_WASH_FEATURES = [
   "Lifelines Waxes",
@@ -20,7 +19,7 @@ export default function CarWashSection() {
   const t = useTranslations("IndexPage.CarWashSection");
 
   return (
-    <section id="car-wash" className="py-20">
+    <section id="car-wash" className="py-20  max-w-screen overflow-hidden">
       <div className="layout grid grid-cols-1 items-center gap-12 md:grid-cols-2">
         <m.div
           initial={{ opacity: 0, x: -50 }}

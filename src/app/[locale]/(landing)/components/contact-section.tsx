@@ -1,15 +1,14 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import * as React from "react";
-import * as m from "motion/react-m";
 import { MessageCircle } from "lucide-react";
+import * as m from "motion/react-m";
+import { useTranslations } from "next-intl";
 
-import { Button } from "@/components/ui/button";
-import X from "@/assets/icons/x.svg";
-import TikTok from "@/assets/icons/tiktok.svg";
-import Linktree from "@/assets/icons/linktree.svg";
 import Instagram from "@/assets/icons/instagram.svg";
+import Linktree from "@/assets/icons/linktree.svg";
+import TikTok from "@/assets/icons/tiktok.svg";
+import X from "@/assets/icons/x.svg";
+import { Button } from "@/components/ui/button";
 
 const socialLinks = [
   {
@@ -37,7 +36,7 @@ const socialLinks = [
 export default function ContactSection() {
   const t = useTranslations("IndexPage.ContactSection");
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20  max-w-screen overflow-hidden">
       <div className="layout text-center">
         <m.h2
           initial={{ opacity: 0, y: -20 }}

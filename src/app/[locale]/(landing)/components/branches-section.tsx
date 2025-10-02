@@ -1,11 +1,12 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import * as React from "react";
-import * as m from "motion/react-m";
 import { MapPin } from "lucide-react";
+import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
+import { useTranslations } from "next-intl";
 
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -13,8 +14,6 @@ import {
   CarouselNext,
   CarouselPrevious
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 const BRANCHES = [
   "Narges Car Wash",
@@ -26,13 +25,10 @@ const BRANCHES = [
 
 export default function BranchesSection() {
   const t = useTranslations("IndexPage.BranchesSection");
-  // The `useTranslations` hook doesn't provide a way to get an array directly.
-  // We have to use a workaround by providing a dummy array to map over.
-  // The length of this array should match the number of branches.
   const branches = t.raw("branches") as any[];
 
   return (
-    <section id="branches" className="bg-muted py-20">
+    <section id="branches" className="bg-muted max-w-screen overflow-hidden py-20">
       <div className="layout">
         <m.h2
           initial={{ opacity: 0, y: -20 }}

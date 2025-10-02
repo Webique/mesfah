@@ -1,10 +1,9 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import * as React from "react";
-import * as m from "motion/react-m";
 import { CheckCircle } from "lucide-react";
+import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
+import { useTranslations } from "next-intl";
 
 const SERVICE_CENTER_FEATURES = [
   "Genuine Oils & Filters",
@@ -20,7 +19,7 @@ const SERVICE_CENTER_FEATURES = [
 export default function ServiceCenterSection() {
   const t = useTranslations("IndexPage.ServiceCenterSection");
   return (
-    <section id="service-center" className="bg-muted py-20">
+    <section id="service-center" className="bg-muted  max-w-screen overflow-hidden py-20">
       <div className="layout grid grid-cols-1 items-center gap-12 md:grid-cols-2">
         <div className="order-2 md:order-1">
           <m.h2

@@ -1,19 +1,17 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import * as React from "react";
 import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
+import { useTranslations } from "next-intl";
 
-import { Link } from "@/i18n/navigation.public";
 import { Button } from "@/components/ui/button";
+import { Link } from "@/i18n/navigation.public";
 
 export default function HeroSection() {
   const t = useTranslations("IndexPage.HeroSection");
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Image with Parallax Effect */}
+    <section className="relative max-w-screen h-screen min-h-[600px] w-full overflow-hidden">
       <m.div
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
@@ -24,139 +22,135 @@ export default function HeroSection() {
           src="/images/IMG_8765.jpeg"
           alt="Car Wash"
           fill
-          className="object-cover"
+          className="object-cover brightness-90"
           priority
         />
       </m.div>
 
-      {/* Gradient Overlay with Modern Effect */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/70 via-black/50 to-transparent" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/75 via-black/50 to-transparent" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
-      {/* Animated Glow Effect */}
-      <div className="absolute inset-0 z-10">
+      <div className="absolute inset-0 z-10 mix-blend-screen">
         <m.div
           animate={{
-            opacity: [0.3, 0.6, 0.3],
+            opacity: [0.2, 0.4, 0.2],
             scale: [1, 1.2, 1]
           }}
           transition={{
-            duration: 4,
+            duration: 6,
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="bg-primary-500/20 absolute left-1/4 top-1/4 h-96 w-96 rounded-full blur-3xl"
+          className="bg-primary/25 absolute left-1/4 top-1/4 h-64 w-64 rounded-full blur-[100px] md:h-96 md:w-96"
         />
         <m.div
           animate={{
-            opacity: [0.2, 0.5, 0.2],
+            opacity: [0.15, 0.35, 0.15],
             scale: [1.2, 1, 1.2]
           }}
           transition={{
-            duration: 5,
+            duration: 7,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
+            delay: 1
           }}
-          className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-purple-500/15 blur-3xl"
+          className="bg-primary/20 absolute bottom-1/4 right-1/4 h-64 w-64 rounded-full blur-[100px] md:h-96 md:w-96"
         />
       </div>
 
-      {/* Content Container */}
-      <div className="relative z-20 flex h-full flex-col items-center justify-center px-4 text-center text-white">
-        {/* Tagline with Stagger Effect */}
+      <div className="relative z-20 flex h-full flex-col items-center justify-center px-4 pb-20 pt-16 text-center text-white sm:px-6 md:pb-24 md:pt-20">
         <m.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-6 max-w-3xl px-4"
+          className="max-w-4xl"
         >
-          <h1 className="text-3xl font-bold leading-tight drop-shadow-lg md:text-5xl lg:text-6xl">
-            <m.span
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="text-white"
-            >
-              أفضل مغاسل وسيـرفس للسيارات
-            </m.span>
+          <h1 className="text-3xl font-bold leading-tight drop-shadow-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            <span className="text-white">{t("title")}</span>
           </h1>
+
           <m.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-            className="mt-4 text-lg text-gray-200 md:text-xl"
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-4 text-base text-gray-100 sm:mt-5 sm:text-lg md:mt-6 md:text-xl lg:text-2xl"
           >
-            مع ضمان الجودة وخدمات مجانية
+            {t("subtitle")}
           </m.p>
         </m.div>
 
-        {/* CTA Buttons with Hover Effects */}
         <m.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-          className="mt-10 flex flex-col gap-4 sm:flex-row"
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-8 flex w-full max-w-md flex-wrap justify-center gap-4 sm:mt-10 sm:max-w-lg sm:flex-row sm:items-center md:mt-12"
         >
-          <m.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.98 }}>
+          <m.div whileHover={{ scale: 1.05, y: -3 }} whileTap={{ scale: 0.95 }}>
             <Button
               asChild
               size="lg"
-              className="hover:shadow-primary/50 relative px-8 py-6 text-lg font-semibold shadow-2xl transition-all"
+              className="hover:shadow-primary/50 px-8 py-6 text-base font-bold shadow-2xl transition-all sm:px-10 sm:py-7 sm:text-lg"
             >
               <Link href="#contact" target="_blank" rel="noreferrer">
-                {t("contactCta")}{" "}
+                {t("contactCta")}
               </Link>
             </Button>
           </m.div>
 
-          <m.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.98 }}>
+          <m.div whileHover={{ scale: 1.05, y: -3 }} whileTap={{ scale: 0.95 }}>
             <Button
               asChild
               variant="outline"
               size="lg"
-              className="border-2 border-white/80 bg-white/10 px-8 py-6 text-lg font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20 hover:text-white hover:shadow-2xl"
+              className="border-2 border-white/70 bg-white/10 px-8 py-6 text-base font-bold text-white backdrop-blur-sm transition-all hover:border-white hover:bg-white/20 hover:text-white hover:shadow-2xl sm:px-10 sm:py-7 sm:text-lg"
             >
               <Link href="#branches">{t("branchesCta")}</Link>
             </Button>
           </m.div>
         </m.div>
 
-        {/* Scroll Indicator */}
         <m.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 sm:bottom-10"
         >
-          <m.a
-            href="#car-wash"
-            animate={{ y: [0, 12, 0] }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="flex flex-col items-center gap-2"
-          >
-            <span className="text-sm uppercase tracking-widest text-white/60">
-              اكتشف المزيد
-            </span>
-            <svg
-              className="h-6 w-6 text-white/80"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <m.a href="#car-wash" className="flex flex-col items-center gap-2">
+            <m.span
+              animate={{ opacity: [0.5, 1, 0.5] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="text-xs uppercase tracking-widest text-white/70 sm:text-sm"
             >
-              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
+              {t("discoverMore")}
+            </m.span>
+            <m.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="flex h-10 w-6 items-start justify-center rounded-full border-2 border-white/50 p-1 backdrop-blur-sm hover:text-white"
+            >
+              <m.div
+                animate={{ y: [0, 12, 0] }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="h-2 w-2 rounded-full bg-white"
+              />
+            </m.div>
           </m.a>
         </m.div>
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 h-32 bg-gradient-to-t from-black/40 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 z-10 h-32 bg-gradient-to-t from-black/50 to-transparent" />
     </section>
   );
 }
