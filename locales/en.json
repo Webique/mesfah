@@ -98,36 +98,41 @@
       ]
     },
     "BranchesSection": {
+      "badge": "Our Locations",
       "title": "Our Branches",
       "branches": [
         {
           "name": "Narges Car Wash",
+          "description": "Narges Car Wash",
           "location": "Narges",
           "mapUrl": "https://maps.app.goo.gl/ZaTEimD73Uyx92si8?g_st=ipc",
           "image": "/images/IMG_8742.jpeg"
         },
         {
           "name": "Mesfah Service - Narges",
+          "description": "Mesfah Service - Narges",
           "location": "Narges",
           "mapUrl": "https://maps.app.goo.gl/g2hPkVk1v5d69WMY9?g_st=ipc",
           "image": "/images/IMG_8741.jpeg"
         },
         {
           "name": "Mesfah Service - Turki Al Awal",
+          "description": "Mesfah Service - Turki Al Awal",
           "location": "Turki Al Awal",
           "mapUrl": "https://maps.app.goo.gl/ienWRmjYbvjhwVKg9?g_st=ipc",
           "image": "/images/IMG_8739.jpeg"
         },
         {
           "name": "Al Muruj Car Wash",
+          "description": "Al Muruj Car Wash",
           "location": "Al Muruj",
           "mapUrl": "https://maps.app.goo.gl/WD3GYAvWrpJbSXVc6?g_st=ipc",
           "image": "/images/IMG_8740.jpeg"
         },
         {
           "name": "Aldrees Station",
-          "location": "Aldrees",
           "description": "Includes Mesfah Service + Mesfah Care",
+          "location": "Aldrees",
           "mapUrl": "https://maps.app.goo.gl/KrH9iurAJZ6RxAUx9?g_st=ipc",
           "image": "/images/IMG_8738.jpeg"
         }

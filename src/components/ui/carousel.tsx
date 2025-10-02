@@ -221,9 +221,11 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-8 w-8 rounded-full",
+        "absolute h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-primary/20 bg-background/80 backdrop-blur-sm hover:bg-primary hover:border-primary hover:text-primary-foreground shadow-lg transition-all duration-300",
         orientation === "horizontal"
-          ? "left-2 top-1/2 -translate-y-1/2 md:-left-12"
+          ? dir === "rtl"
+            ? "right-5 top-1/2 -translate-y-1/2 md:right-6 lg:-right-16"
+            : "left-5 top-1/2 -translate-y-1/2 md:left-6 lg:-left-16"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -254,9 +256,11 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-8 w-8 rounded-full",
+        "absolute h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-primary/20 bg-background/80 backdrop-blur-sm hover:bg-primary hover:border-primary hover:text-primary-foreground shadow-lg transition-all duration-300",
         orientation === "horizontal"
-          ? "right-2 top-1/2 -translate-y-1/2 md:-right-12"
+          ? dir === "rtl"
+            ? "left-5 top-1/2 -translate-y-1/2 md:left-6 lg:-left-16"
+            : "right-5 top-1/2 -translate-y-1/2 md:right-6 lg:-right-16"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
