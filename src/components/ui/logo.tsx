@@ -53,13 +53,13 @@ export default function Logo({
         <div>
           <span
             className={cn(
-              "from-primary/90 to-primary bg-gradient-to-r via-slate-800 bg-clip-text text-xl font-black text-transparent",
+              "text-xl font-black text-white",
               smallInMobile && "text-lg leading-5 sm:text-lg"
             )}
           >
             {t("siteName")}
           </span>
-          <p className={cn("text-xs font-medium text-gray-600", desClassName)}>
+          <p className={cn("text-xs font-medium text-white/80", desClassName)}>
             {t("siteDescription")}
           </p>
         </div>
