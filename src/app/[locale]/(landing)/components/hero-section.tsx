@@ -19,8 +19,8 @@ export default function HeroSection() {
         className="absolute inset-0 z-0"
       >
         <ExportedImage
-          src="/images/IMG_8765.jpeg"
-          alt="Car Wash"
+          src="/images/hero.jpeg"
+          alt="hero"
           fill
           className="object-cover brightness-90"
           priority
